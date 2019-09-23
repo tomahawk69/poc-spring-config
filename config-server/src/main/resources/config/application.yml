@@ -1,0 +1,4 @@
+client:
+  properties:
+    prop1: Resource Default 11
+    prop2: Resource Default 22

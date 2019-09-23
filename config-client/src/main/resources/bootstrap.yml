@@ -1,0 +1,8 @@
+spring.application.name: config-client-service
+
+encrypt:
+  keyStore:
+    location: classpath:/server-prod.jks
+    password: letmein1
+    alias: mytestkey
+    secret: changeme

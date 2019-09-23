@@ -1,0 +1,4 @@
+client:
+  properties:
+    prop1: Config Default 11
+    prop2: Config Default 22

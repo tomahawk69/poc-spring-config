@@ -1,0 +1,47 @@
+spring:
+  application.name: config-server-service
+  cloud.config.server:
+    bootstrap: true
+    native:
+      searchLocations: ./src/main/resources/config
+    encrypt:
+      enabled: false
+    git:
+      uri: git@github.com:tomahawk69/config-repo.git
+      refreshRate: 0
+      ignoreLocalSshSettings: true
+      privateKey: |
+        -----BEGIN RSA PRIVATE KEY-----
+        MIIEowIBAAKCAQEAs2IJnzoDdfntikctJnNhvXxbRU2EiEFymUaq6u5yKFYEFaxU
+        5HORcKPxDO77gJUWQMoJ5bCw5wgYvPlamZ2/dtzqkPNGl9DIjAnMIWd2kYIe++CU
+        sFC3M9z9KHwy6PoiVlpLKHAYtwRAXYvW/vJ9yDqsRA73eIa/tsKuQRJU1zbPc5yC
+        3lRu0gIuam6l4YMLO8sgstI91jacRaaVcWx35P35kNMeDRWG/GlFpKGIMhI5wWai
+        CDnQLHFYys/Vde0WiKdPj5G+c1z9HeilG0kxgWoZGMYlb72F94YQ1PgXjJlRL2T5
+        xIh45sxZPbuJZ/fl/6IKVC9ztfdVZKsTlqdqqQIDAQABAoIBACeP+btKWjUM2Bzl
+        McoHLIlUAfU48X/zn0i60ztZN4g54FC/X0G7U1pabfGCS6nCN9Q2OxSTcZCisoIL
+        JLY4ml+mvX0Win01KOXpy0GaxgW1gwveLizswFsJ5DOnoLrNYAFXjLfwcSL8Jw36
+        p4I3DRK6DgA8pMvKPEIckb38QwXrzBVJXUqr9pJtbU5i/wHhZrTq6cu3gAwqUs+S
+        L08onygDmjbA/DK0W9c0CDlnIJcPlflWFdzUR9PO9nSc7dXUJRrLaTd4Xp7DjIyj
+        HS6DTtOH3L23YxgZsLOR8n6jEByF9bd2n/Oz+zA3PkZ1v13a28Vd88MnAP2wIY/d
+        4gDLkgECgYEA4RsFuz2J2gybsoysneWQIu3fADdcROzGB/FQnfYuRMsls61OpGXn
+        LWR+IkyY5u7Uv3CVDyczEV0MSM8I9ivE27Kyf4RkYoP8zBGii9T8eT4uT0VT9YuI
+        w8yPBz4VnFDCP7u+YifpnMnB0FBq5QQJD6tkvNuDwU9bcM1Mk+n3BUkCgYEAzACS
+        xEw3DxQuM62T4th7xTrxSTUNjODldQSCwsi2s765YV7WkXZt9aNl0SxVZB6lNm3v
+        YOGgQXukN2qgHKDfUDbmLtG6loEQ/6FEixgrrpzgUnV3oLjMowtbP0em4xm6DX6g
+        MOpf5dnoTs23sJ5FK0TM0MOKbrIcPiPUfn5dGmECgYEAnWtvU6TSbWlZzMBxyq4K
+        YVLmG1mbrhvC1TUdwomxi6xhPkjZcUBOLcFUMBpO51hn8UUDCKjKHr9qYtReGQE8
+        1sMd7u0f4oEY3YELoiwdL5CbhBYgg9vDleHMuCzjogAcB8P8fNoalenGHy7NwkBT
+        MeETPrtoZVxgvv7jKaF5fPkCgYAj/KHnYO6BiXTRBvjElp3W4Bv6ZxJ53J59swsC
+        I3gfYzC+nYVKadLh9y4Z5TE3FTTd0izdMVAc3RvN7tBJ3JMoSlb2wWah8Ci4f5Fg
+        3CWwitoDkddFkfP/exxgoFovS7WHdeP6XQ4HtRYG+MFDtdfL1zouRaBhAKh8ycNN
+        gSsZYQKBgDtl7Gw4gUGvJLRc8qjuPh6nuCRkFTMYg+9u+YcwTf4XT8kmbEWXPi2R
+        KVqK//GpCUJrFWH/0orm1R9lMA4x/C5nNFw8rlXeiKbHh3+fTh7OALQFB+1m6r2c
+        DQLGJDGxLU1GHBmFfJ/eL1XCet46TuVdoxHejUYlfJLlnDEtMFbA
+        -----END RSA PRIVATE KEY-----
+
+encrypt:
+  keyStore:
+    location: classpath:/server-prod.jks
+    password: letmein1
+    alias: mytestkey
+    secret: changeme
