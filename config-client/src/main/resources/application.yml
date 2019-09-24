@@ -1,1 +1,3 @@
 client.first.test1: Default App
+server:
+  port: 8081
