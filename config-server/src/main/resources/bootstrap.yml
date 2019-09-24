@@ -8,7 +8,7 @@ spring:
       enabled: false
     git:
       uri: git@github.com:tomahawk69/spring-config.git
-      prefix: /config-repo
+      prefix: /config-repo/
       refreshRate: 100
       ignoreLocalSshSettings: true
       deleteUntrackedBranches: true
