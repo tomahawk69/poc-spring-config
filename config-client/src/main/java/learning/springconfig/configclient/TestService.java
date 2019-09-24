@@ -22,4 +22,8 @@ public class TestService {
         log.info("App started as " + prop1);
         log.info("App feels as " + prop2);
     }
+
+    public String props() {
+        return prop1 + ":" + prop2;
+    }
 }
