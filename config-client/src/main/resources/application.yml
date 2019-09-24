@@ -1,3 +1,9 @@
 client.first.test1: Default App
 server:
   port: 8081
+spring.cloud.bus.enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

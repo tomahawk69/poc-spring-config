@@ -2,3 +2,10 @@ server:
   port: 8888
   properties:
     prop1: Default
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
