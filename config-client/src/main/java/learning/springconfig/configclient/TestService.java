@@ -2,12 +2,14 @@ package learning.springconfig.configclient;
 
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
 @Component
 @Log
+@RefreshScope
 public class TestService {
 
     @Value("${client.properties.prop1}")
