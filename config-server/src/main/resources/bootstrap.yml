@@ -5,11 +5,13 @@ spring:
     native:
       searchLocations: ..
     encrypt:
-      enabled: true
+      enabled: false
     git:
       uri: git@github.com:tomahawk69/spring-config.git
+      prefix: /config-repo
       refreshRate: 100
       ignoreLocalSshSettings: true
+      deleteUntrackedBranches: true
       privateKey: |
         -----BEGIN RSA PRIVATE KEY-----
         MIIEowIBAAKCAQEAs2IJnzoDdfntikctJnNhvXxbRU2EiEFymUaq6u5yKFYEFaxU

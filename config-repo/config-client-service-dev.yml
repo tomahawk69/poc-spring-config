@@ -1,0 +1,4 @@
+client:
+  properties:
+    prop1: presto
+    prop2: '{cipher}AQCGNU3798taqud76UBtmXpzQGUTe2DYVZIt1jAGhxflTkec2IkmM+/XV8Nf3494UTuWghrULFQ9K+OUG/nEwdPOrCVM5HplgEtagd4hZsUSiDSia62A9AGYj5eoy+9Dz70jftdKDLFsP3tJexS0NKXyONcnUBATawlICUb6vlKGQHn9DQVrJp0Ts/eArqjM1CEzQbBvlzUzVd+DCLW4EgYa4NIXsKwO8Fu/gUiBEzY60WdvGdZ8rFylP0/SRtYHkeVdpbJlsxKfUlj0K+I7gcNSh/m58mG5PnqY8IKP8GCyTR7MpMmgFd3Zohv6awey+ZTohlvb6f2+UEHPaFqGB/oOF8PP14xtq4fiGZVbKuwBg+u7aCRMXt26smZT+22lozw='
