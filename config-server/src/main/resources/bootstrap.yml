@@ -3,11 +3,11 @@ spring:
   cloud.config.server:
     bootstrap: true
     native:
-      searchLocations: ./src/main/resources/config
+      searchLocations: ../config-repo
     encrypt:
       enabled: false
     git:
-      uri: git@github.com:tomahawk69/config-repo.git
+      uri: https://github.com/tomahawk69/spring-config/config-repo
       refreshRate: 0
       ignoreLocalSshSettings: true
       privateKey: |
