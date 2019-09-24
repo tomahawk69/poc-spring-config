@@ -5,7 +5,7 @@ spring:
     native:
       searchLocations: ..
     encrypt:
-      enabled: false
+      enabled: true
     git:
       uri: git@github.com:tomahawk69/spring-config.git
       refreshRate: 1000
