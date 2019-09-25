@@ -3,3 +3,4 @@ server:
 client:
   properties:
     prop1: adagio
+    prop3: test1

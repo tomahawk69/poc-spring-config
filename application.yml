@@ -2,3 +2,13 @@ client:
   properties:
     prop1: Config Default 111
     prop2: Config Default 22
+
+spring:
+   cloud: 
+     stream:
+       bindings:
+         springCloudBusOutput:
+           destination: spring-bus-test
+         springCloudBusInput:
+           destination: spring-bus-test
+           group: ${spring.application.name}

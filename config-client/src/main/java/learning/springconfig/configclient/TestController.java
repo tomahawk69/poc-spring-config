@@ -11,9 +11,20 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     private final TestService testService;
+    private final TestService2 testService2;
 
-    @GetMapping("test")
-    private String test() {
+    @GetMapping("test1")
+    private String test1() {
         return testService.props();
+    }
+
+    @GetMapping("test2")
+    private String test2() {
+        return testService2.props();
+    }
+
+    @GetMapping("test21")
+    private String test21() {
+        return testService2.props();
     }
 }
