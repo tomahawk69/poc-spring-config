@@ -13,5 +13,5 @@ public class ConfigServerApplication {
 		SpringApplication.run(ConfigServerApplication.class, args);
 	}
 
-	// todo test2
+	// todo test2 update 2
 }
